@@ -1,0 +1,370 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+/* Texte en place sans l'écrit de l'utilisateur */
+::placeholder{
+    padding: 1em;
+    color: rgb(49, 47, 47);
+}
+
+/*Détails globaux aux 3 pages */
+.body{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background: #969892;
+}
+
+
+/*Gros texte commun à toutes les pages */
+.login h1,.register h1,.reset h1{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    font-style: oblique;
+    font-size: 200%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+/* Texte en petit commun à connexion et réinitialisation*/
+.login h6,.reset h6{
+    color: rgb(0, 0, 0);
+    font-weight: 40;
+    text-align: center;
+    font-size: 15;
+}
+
+
+/* DEBUT DE LA PARTIE LOGIN */
+
+/*Survol du mdp oublié*/
+a:hover{
+    color: rgb(130, 130, 134);
+}
+
+/* Corps du login*/
+.login{
+    width: 50%;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #969892;
+    text-align: center;
+    border-radius: 45px;
+    box-shadow: 10px 5px 5px #3d4664;
+}
+
+/* Couleur pour mdp oublié */
+.a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Entrée de texte utilisateur*/
+.login input[type = "email"],.login input[type = "password"],.reset input[type = "email"]{
+
+    align-items: center;
+    background: none;
+    border: 0;
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    border: 2px solid #344283;
+    padding: 7px 9px;
+    width: 150px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    transition: 0.3s;
+    
+}
+
+/*Changement de couleur lors d'un clic*/
+.login input[type = "email"]:focus,.login input[type = "password"]:focus,.reset input[type = "email"]:focus{
+    width: 240px;
+    border-color: #344283;
+}
+
+/* Bouton de type submit commun aux 3 pages*/
+.login input[type = "submit"],.register input[type = "submit"],.reset input[type = "submit"]{
+
+    align-items: center;
+    background: none;
+    border: 0;
+    display: block;
+    margin: 11px auto;
+    text-align: center;
+    border: 2px solid #344283;
+    padding: 7px 25px;
+    outline: none;
+    color: rgb(5, 5, 5);
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Survol des boutons de type submit*/
+
+.login input[type = "submit"]:hover,.reset input[type = "submit"]:hover,.register input[type = "submit"]:hover{
+    background: rgb(134, 130, 130);
+
+}
+/* FIN DE LA PARTIE LOGIN*/
+
+/* DEBUT LE LA PARTIE REGISTER*/
+
+/* Corps de la page register*/
+.register{
+    
+    width: 40%;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #969892;
+    text-align: center;
+    border-radius: 45px;
+    box-shadow: 10px 5px 5px #242b42;
+}
+
+/* Bulles de texte de la page inscription*/
+
+.register input[type = "text"],.register input[type = "password"],.register input[type = "email"]{
+
+    background: none;
+    border: 0;
+    margin: 7px auto;
+    display: inline-block;
+    text-align: left;
+    border: 2px solid #3d4664;
+    padding: 7px 9px;
+    width: 50%;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    transition: 0.3s;
+    
+}
+
+/* Bulles de texte lors d'un clic*/
+.register input[type = "text"]:focus,.register input[type = "password"]:focus,.register input[type = "email"]:focus{
+    width: 60%;
+    border-color: #3d4664;
+}
+
+
+/* FIN DE LA PARTE REGISTER*/
+
+/* DEBUT DE LA PARTIE RESET*/
+
+/* Corps de la page reset*/
+
+.reset{
+    width: 60%;
+    height: 70%;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #969892;
+    text-align: center;
+    border-radius: 45px;
+    box-shadow: 10px 5px 5px #2b3452;
+}
+/* FIN DE LA PARTIE RESET*/
+
+/* Couleurs et police du body*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
+
+body{
+    
+    color: rgb(48, 47, 47);
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/*Navigation et Logo*/
+.topnav {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+header{
+    margin-top: 5%;
+    
+}
+
+.logo{
+    align-content: flex-end;
+    margin-top: -10%;
+    size: 0%;
+}
+
+/*Titre du site*/
+article{
+    margin-top: 4%;
+    text-align: center;
+}
+
+/*Style texte*/
+h3{
+    font-style: inherit;
+    text-align: center;
+    font-size: 300%;
+    margin-top: 5%;
+    margin-bottom: inherit;
+}
+
+/*Style et attributions des liens dans le bloc footer*/
+aside{
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 5%;
+}
+
+/*Texte Header*/
+h1{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    font-style: oblique;
+    font-size: 400%;
+    margin-top: 12%;
+    margin-bottom: 0%;
+    
+}
+
+/*Texte Services ects*/
+h4{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 200%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+/*Texte "Nouveautés"*/
+
+/*Presentation et texte "Nouveautés"*/
+.futur{
+    border-radius: 15%;
+    font-size: 100%;
+    margin: center;
+    display: flex;
+    font-display: center;
+    align-items: center;
+    font-display: flex;
+    width: 100%;
+}
+
+.box{
+    box-sizing: border-box;
+    color: #2f435e;
+    background-color: #969892;
+    border-radius: 15%;
+}
+
+h5{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 200%;
+}
+
+/*Le Reste et les items a vendre*/
+.nouveauté{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin: 5%;
+    font-size: 150%;
+}
+
+/*Texte de la section "offre et services"*/
+h2{
+    margin-bottom: 3%;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 220%;
+}
+
+/*Paragraphe d'introduction*/
+.text1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 140%;
+    margin-bottom: 5%;
+}
+
+/* Style du footer et de certains éléments du body*/
+footer{ 
+    margin-bottom: inherit;
+    padding: 0%;
+    color: rgb(255, 255, 255);
+    background-color: #2f435e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 255, 255);
+
+}
+
+/*Style section Copyrights*/
+.copyR {
+    font-size: 70%;
+    margin-left: initial;
+    text-align: left;
+}
+
+/*Style et attribution des liens de la nav de fin de page*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2f435e;
+    width: auto;
+    display: flex;
+    text-align: center;
+}
+
+li {
+    
+    text-align: center;
+}
+
+li a {
+    border-radius: 15%;
+    width: auto;
+    margin-left: 0px;
+    display: flex;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.botnav {
+    display: flex;
+    text-align: right;
+    color: #f5f7fa;
+}

@@ -1,0 +1,162 @@
+/* Corps principal*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background: white;
+}
+
+/*Gros titre "Nos Produits"*/
+h1{
+    padding: 2%;
+    text-align: center;
+}
+
+/*Classe Produits (Grand tableau)*/
+.Produits {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 75%;
+    border-radius: 15px;
+    
+}
+
+/*Division en 3 lignes*/
+.Produits > div {
+    background-color: #f1f1f1;
+    margin: 0; 
+    width: 100%;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    border: 3px solid rgb(46, 0, 250);
+    font-size: 30px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px #3d4664;
+}
+
+/*Division en 4 colonnes*/
+.Produits > div > div {
+
+    width: 25%;
+    height: 100%;
+    border: 2px 100% solid rgb(46, 0, 250);
+    border-radius: 15%;
+    margin-bottom: 2%;
+}
+
+/*Catégorie du produit*/
+h2{
+    margin: 1%;
+    padding: 2%;
+
+}
+
+/*Nom du produit*/
+h6{
+    margin: 1%;
+    padding: 0;
+    font-size: small;
+}
+
+/* Boutons fiche produit*/
+.Produits input[type = "submit"]{
+
+    align-items: center;
+    background: none;
+    border: 0;
+    display: block;
+    margin: 0;
+    width: 125px;
+    text-align: center;
+    border: 2px solid #6348ff;
+    padding: 1px 3px;
+    outline: none;
+    color: rgb(5, 5, 5);
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Survol des boutons de type submit*/
+
+.Produits input[type = "submit"]:hover{
+    border-color: rgb(68, 180, 255);
+    width: 150px;
+}
+
+/* Style du footer et de certains éléments du body*/
+footer{ 
+    margin-bottom: inherit;
+    padding: 0;
+    margin-top: 2%;
+    color: rgb(255, 255, 255);
+    background-color: #2f435e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 255, 255);
+
+}
+
+/*Style section Copyrights*/
+.copyR {
+    font-size: 70%;
+    margin-left: initial;
+    text-align: left;
+}
+
+/*Style et attribution des liens de la nav de début de page*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2f435e;
+    width: auto;
+    display: flex;
+    text-align: center;
+}
+
+
+header{
+    margin-top: 5%;
+    
+}
+
+li {
+    
+    text-align: center;
+}
+
+li a {
+    border-radius: 15%;
+    width: auto;
+    margin-left: 0px;
+    display: flex;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Navigation et Logo*/
+.topnav {
+    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+/*Survol des textes de nav*/
+a:hover{
+    color: rgb(134, 130, 130);
+}
